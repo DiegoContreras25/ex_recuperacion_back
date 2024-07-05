@@ -16,10 +16,8 @@ type Character{
 
 }
 type  Query {
-
    character(id: ID!): Character
-
-   
+   charactersByIds(ids: [ID!]!): [Character]
 
 }
 
